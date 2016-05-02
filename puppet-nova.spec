@@ -10,7 +10,6 @@ Source0:        https://github.com/openstack/puppet-nova/archive/%{version}.tar.
 
 BuildArch:      noarch
 
-Requires:       puppet-qpid
 Requires:       puppet-cinder
 Requires:       puppet-glance
 Requires:       puppet-inifile
