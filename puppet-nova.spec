@@ -11,14 +11,15 @@ Source0:        https://github.com/openstack/puppet-nova/archive/%{version}.tar.
 BuildArch:      noarch
 
 Requires:       puppet-qpid
-Requires:       puppet-sysctl
 Requires:       puppet-cinder
 Requires:       puppet-glance
 Requires:       puppet-inifile
 Requires:       puppet-keystone
+Requires:       puppet-openstacklib
+Requires:       puppet-oslo
 Requires:       puppet-rabbitmq
 Requires:       puppet-stdlib
-Requires:       puppet-openstacklib
+Requires:       puppet-sysctl
 Requires:       puppet >= 2.7.0
 
 %description
