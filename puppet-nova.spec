@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
 Version:        XXX
 Release:        XXX
