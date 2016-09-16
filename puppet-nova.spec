@@ -1,7 +1,7 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
-Version:        XXX
-Release:        XXX
+Version:        9.2.0
+Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        Apache-2.0
 
@@ -49,3 +49,6 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Fri Sep 16 2016 Haikel Guemar <hguemar@fedoraproject.org> 9.2.0-1
+- Update to 9.2.0
+
