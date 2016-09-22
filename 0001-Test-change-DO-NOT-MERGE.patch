@@ -1,0 +1,20 @@
+From 5b8f1a1cf1996d1e0ba800da143ee8b07d6f285a Mon Sep 17 00:00:00 2001
+From: Ben Kero <ben.kero@gmail.com>
+Date: Mon, 20 Jun 2016 14:16:56 +0200
+Subject: [PATCH] Test change -- DO NOT MERGE
+
+Change-Id: I192810a2d445513a2d4663ba6a094e5315e7a06e
+---
+ manifests/init.pp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/manifests/init.pp b/manifests/init.pp
+index a9c7d26..bc701ed 100644
+--- a/manifests/init.pp
++++ b/manifests/init.pp
+@@ -1,4 +1,4 @@
+-# == Class: nova
++# == Class: nova -- test change
+ #
+ # This class is used to specify configuration parameters that are common
+ # across all nova services.
