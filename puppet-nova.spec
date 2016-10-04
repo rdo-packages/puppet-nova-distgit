@@ -28,7 +28,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for OpenStack Nova
 
 %prep
-%setup -q -n puppet-nova-%{upstream_version}
+%setup -q -n openstack-nova-%{upstream_version}
 
 %patch0001 -p1
 
