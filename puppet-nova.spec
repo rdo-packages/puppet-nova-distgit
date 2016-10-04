@@ -26,7 +26,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for OpenStack Nova
 
 %prep
-%setup -q -n %{name}-%{upstream_version}
+%setup -q -n openstack-nova-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
