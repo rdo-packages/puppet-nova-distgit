@@ -9,8 +9,6 @@ URL:            https://launchpad.net/puppet-nova
 
 Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz
 
-Patch0001: 0001-Test-change-DO-NOT-MERGE.patch
-
 BuildArch:      noarch
 
 Requires:       puppet-cinder
@@ -29,8 +27,6 @@ Puppet module for OpenStack Nova
 
 %prep
 %setup -q -n openstack-nova-%{upstream_version}
-
-%patch0001 -p1
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
