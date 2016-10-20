@@ -1,15 +1,13 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
 Version:        9.4.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        Apache-2.0
 
 URL:            https://launchpad.net/puppet-nova
 
 Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz
-
-Patch0001: 0001-Test-change-DO-NOT-MERGE.patch
 
 BuildArch:      noarch
 
@@ -29,8 +27,6 @@ Puppet module for OpenStack Nova
 
 %prep
 %setup -q -n openstack-nova-%{upstream_version}
-
-%patch0001 -p1
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
@@ -53,6 +49,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Thu Oct 20 2016 Haïkel Guémar <hguemar@fedoraproject.org> - 9.4.0-2
+- Drop stupid patch which should have never been included
+
 * Thu Sep 29 2016 Alfredo Moralejo <amoralej@redhat.com> 9.4.0-1
 - Update to 9.4.0
 
