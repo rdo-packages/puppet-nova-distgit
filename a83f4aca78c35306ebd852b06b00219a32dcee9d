@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5adbc538_801478f6",
+        "filename": "puppet-nova.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-10-21T22:48:45Z",
+      "side": 0,
+      "message": "Can you also git rm 0001-Test-change-DO-NOT-MERGE.patch ?",
+      "revId": "a83f4aca78c35306ebd852b06b00219a32dcee9d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}

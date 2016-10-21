@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5adbc538_a0f894c5",
+        "filename": "puppet-nova.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-10-21T22:48:45Z",
+      "side": 1,
+      "message": "I think we don\u0027t need rebuilt just for this cleanup.",
+      "revId": "08c4213df6202aa51e84f6ea18e04b1660cc4a7b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5adbc538_c0f5a0cc",
+        "filename": "puppet-nova.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-10-21T22:48:45Z",
+      "side": 1,
+      "message": "and no need for changelog either, changelog is end-user documentation, such changelog don\u0027t bring value to them",
+      "revId": "08c4213df6202aa51e84f6ea18e04b1660cc4a7b",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
