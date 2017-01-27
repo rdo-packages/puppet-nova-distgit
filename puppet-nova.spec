@@ -3,7 +3,7 @@ Name:           puppet-nova
 Version:        XXX
 Release:        XXX
 Summary:        Puppet module for OpenStack Nova
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://launchpad.net/puppet-nova
 
