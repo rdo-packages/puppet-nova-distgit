@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
-Version:        10.3.0
+Version:        10.4.0
 Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
@@ -49,5 +49,8 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Mon Mar 13 2017 Alfredo Moralejo <amoralej@redhat.com> 10.4.0-1
+- Update to 10.4.0
+
 * Wed Feb 08 2017 Haikel Guemar <hguemar@fedoraproject.org> 10.3.0-1
 - Update to 10.3.0
