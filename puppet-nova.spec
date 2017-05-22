@@ -1,13 +1,13 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
-Version:        9.5.0
+Version:        9.5.1
 Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        Apache-2.0
 
 URL:            https://launchpad.net/puppet-nova
 
-Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz
+Source0:        https://github.com/openstack/%{name}/archive/%{upstream_version}.tar.gz
 
 Patch0001: 0001-Test-change-DO-NOT-MERGE.patch
 
@@ -28,7 +28,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for OpenStack Nova
 
 %prep
-%setup -q -n openstack-nova-%{upstream_version}
+%setup -q -n puppet-nova-%{upstream_version}
 
 %patch0001 -p1
 
@@ -53,6 +53,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Mon May 22 2017 rdo-trunk <javier.pena@redhat.com> 9.5.1-1
+- Update to 9.5.1
+
 * Thu Feb 02 2017 Alfredo Moralejo <amoralej@redhat.com> 9.5.0-1
 - Update to 9.5.0
 
