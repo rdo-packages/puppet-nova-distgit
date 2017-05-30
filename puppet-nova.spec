@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
-Version:        9.5.1
+Version:        9.5.3
 Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        Apache-2.0
@@ -53,6 +53,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Tue May 30 2017 rdo-trunk <javier.pena@redhat.com> 9.5.3-1
+- Update to 9.5.3
+
 * Mon May 22 2017 rdo-trunk <javier.pena@redhat.com> 9.5.1-1
 - Update to 9.5.1
 
