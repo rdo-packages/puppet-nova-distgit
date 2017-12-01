@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
-Version:        11.4.0
+Version:        11.4.1
 Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
@@ -49,6 +49,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Fri Dec 01 2017 RDO <dev@lists.rdoproject.org> 11.4.1-1
+- Update to 11.4.1
+
 * Sun Oct 08 2017 rdo-trunk <javier.pena@redhat.com> 11.4.0-1
 - Update to 11.4.0
 
