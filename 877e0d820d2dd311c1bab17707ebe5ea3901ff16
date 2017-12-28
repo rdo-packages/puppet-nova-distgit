@@ -1,0 +1,9 @@
+Code-Review+2: chkumar246 <chkumar@redhat.com>
+Code-Review+2: Emilien Macchi <emilien@redhat.com>
+Workflow+1: Emilien Macchi <emilien@redhat.com>
+Verified+2: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-by: Jenkins CI <admin@rpmfactory.beta.rdoproject.org>
+Submitted-at: Thu, 28 Dec 2017 15:03:45 +0000
+Reviewed-on: https://review.rdoproject.org/r/11114
+Project: puppet/puppet-nova-distgit
+Branch: refs/heads/newton-rdo
