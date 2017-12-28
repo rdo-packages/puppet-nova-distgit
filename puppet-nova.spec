@@ -77,3 +77,4 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 * Fri Sep 16 2016 Haikel Guemar <hguemar@fedoraproject.org> 9.2.0-1
 - Update to 9.2.0
 
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/puppet-nova/commit/?id=b542a4c280fa9e363a1aa55af724ae5678a85b20
