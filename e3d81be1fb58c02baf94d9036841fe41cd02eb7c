@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "117111cc_8a04ee30",
+        "filename": "puppet-nova.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-10-05T14:59:00Z",
+      "side": 1,
+      "message": "i think u need to handle it differently for dlrn and for cbs builds",
+      "range": {
+        "startLine": 35,
+        "startChar": 15,
+        "endLine": 35,
+        "endChar": 19
+      },
+      "revId": "e3d81be1fb58c02baf94d9036841fe41cd02eb7c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
