@@ -1,5 +1,5 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
-%global commit e2daa4e2c83d061b496ebea6a373fa40ba6d48ab
+%global commit 0618e74260e4d45ed167800bdee370b531a8c62a
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -7,7 +7,7 @@
 
 Name:           puppet-nova
 Version:        17.4.0
-Release:        2%{?alphatag}%{?dist}
+Release:        3%{?alphatag}%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
 
@@ -55,6 +55,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Mon Oct 05 2020 Joel Capitao <jcapitao@redhat.com> 17.4.0-3.0618e74git
+- Update to post 17.4.0 (0618e74260e4d45ed167800bdee370b531a8c62a)
+
 * Mon Oct 05 2020 Joel Capitao <jcapitao@redhat.com> 17.4.0-2.e2daa4egit
 - Update to post 17.4.0 (e2daa4e2c83d061b496ebea6a373fa40ba6d48ab)
 
