@@ -1,4 +1,9 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%if 0%{?dlrn}
+%define upstream_name openstack-nova
+%else
+%define upstream_name puppet-nova
+%endif
 %global commit 0618e74260e4d45ed167800bdee370b531a8c62a
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
@@ -7,13 +12,13 @@
 
 Name:           puppet-nova
 Version:        17.4.0
-Release:        3%{?alphatag}%{?dist}
+Release:        4%{?alphatag}%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
 
 URL:            https://launchpad.net/puppet-nova
 
-Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz
+Source0:        https://github.com/openstack/%{name}/archive/%{commit}.tar.gz
 
 BuildArch:      noarch
 
@@ -32,7 +37,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for OpenStack Nova
 
 %prep
-%setup -q -n openstack-nova-%{upstream_version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
@@ -55,6 +60,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Mon Oct 05 2020 Joel Capitao <jcapitao@redhat.com> 17.4.0-4.0618e74git
+- Set upstream_version based on commit
+
 * Mon Oct 05 2020 Joel Capitao <jcapitao@redhat.com> 17.4.0-3.0618e74git
 - Update to post 17.4.0 (0618e74260e4d45ed167800bdee370b531a8c62a)
 
