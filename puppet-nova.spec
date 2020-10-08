@@ -11,8 +11,8 @@
 
 
 Name:           puppet-nova
-Version:        17.4.0
-Release:        4%{?alphatag}%{?dist}
+Version:        17.5.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
 
@@ -60,6 +60,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Thu Oct 08 2020 RDO <dev@lists.rdoproject.org> 17.5.0-1.0618e74git
+- Update to 17.5.0
+
 * Mon Oct 05 2020 Joel Capitao <jcapitao@redhat.com> 17.4.0-4.0618e74git
 - Set upstream_version based on commit
 
