@@ -1,8 +1,4 @@
-%{!?upstream_version: %global upstream_version %{commit}}
-%global commit 0d7f13ff9b60952cd19fee0ce40bf5ea007f2137
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
+%{!?upstream_version: %global upstream_version %{version}}
 
 %if 0%{?dlrn}
 %define upstream_name openstack-nova
@@ -11,14 +7,14 @@
 %endif
 
 Name:           puppet-nova
-Version:        16.4.0
-Release:        0.1%{?alphatag}%{?dist}
+Version:        16.5.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
 
 URL:            https://launchpad.net/puppet-nova
 
-Source0:        https://github.com/openstack/%{name}/archive/%{commit}.tar.gz#/%{name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/openstack/%{name}/archive/%{version}.tar.gz#/%{name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -60,6 +56,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Thu Feb 11 2021 RDO <dev@lists.rdoproject.org> 16.5.0-1.0d7f13fgit
+- Update to 16.5.0
+
 * Wed Jun 17 2020 Alfredo Moralejo <amoralej@redhat.com> - 16.4.0-0.1.0d7f13fgit
 - Update to 16.4.0 (commit 0d7f13ff9b60952cd19fee0ce40bf5ea007f2137)
 
