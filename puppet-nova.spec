@@ -1,7 +1,7 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           puppet-nova
-Version:        15.6.0
+Version:        15.7.0
 Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
@@ -50,6 +50,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Thu Feb 11 2021 RDO <dev@lists.rdoproject.org> 15.7.0-1
+- Update to 15.7.0
+
 * Fri Jun 19 2020 RDO <dev@lists.rdoproject.org> 15.6.0-1
 - Update to 15.6.0 offical tarball
 
