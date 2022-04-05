@@ -67,3 +67,4 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 %changelog
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/puppet-nova/commit/335fb1a20ea64fd01d924abecfb21e857ab6c1b5
