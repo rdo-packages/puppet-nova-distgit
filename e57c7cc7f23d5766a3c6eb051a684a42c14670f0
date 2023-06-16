@@ -50,6 +50,24 @@
       "message": "The upstream release job failed https://zuul.opendev.org/t/openstack/build/fb62bbb7adcd461da1a31434ca19a959",
       "revId": "e57c7cc7f23d5766a3c6eb051a684a42c14670f0",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04105963_d1606684",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-16T07:44:01Z",
+      "side": 1,
+      "message": "I asked on #openstack-release to check the issue",
+      "parentUuid": "225c58d2_0aeef606",
+      "revId": "e57c7cc7f23d5766a3c6eb051a684a42c14670f0",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
