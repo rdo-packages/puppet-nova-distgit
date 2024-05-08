@@ -1,8 +1,8 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x815AFEC729392386480E076DCC0DFE2D21C023C9
+%global sources_gpg_sign 0xf8675126e2411e7748dd46662fc2093e4682645f
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-nova
-Version:        21.2.0
+Version:        21.3.0
 Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Nova
 License:        ASL 2.0
@@ -63,6 +63,9 @@ rm -f %{buildroot}/%{_datadir}/openstack-puppet/modules/nova/files/nova-novncpro
 
 
 %changelog
+* Wed May 08 2024 RDO <dev@lists.rdoproject.org> 21.3.0-1
+- Update to 21.3.0
+
 * Thu Sep 07 2023 RDO <dev@lists.rdoproject.org> 21.2.0-1
 - Update to 21.2.0
 
